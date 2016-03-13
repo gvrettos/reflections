@@ -4,3 +4,22 @@ A .git metadata folder is created. This will keep the information of my commits.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 It is an intermediate step between the working directory and a commit to the repository. It helps us pick only the files we want to add to a specific commit.
 
+How can you use the staging area to make sure you have one commit per logical change?
+Although I may have made changes to various files referring to multiple logical units I can add some of them on the staging area and commit. I can go along this way until I commit all my logical units.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When we would like to add/change something that is not part of the main development. For instance, testing a new feature which may eventually not be included in final version of our work or trying to fix a difficult bug but we would like to continue our main job as normal.
+
+How do the diagrams help you visualize the branch structure?
+I can visualize the output of git log and if any of my changes is traceable or need a separate branch to keep track of them.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do
+All changes from the 2 branches now exist in just one branch. It is actually a new commit containing the contents of both branches. It is as we continue on working on one branch after the merge.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging pros:
+1. Quicker
+2. Merge something that a person may miss
+Automatic merging cons:
+1. It may not know what to keep or discard in certain circumstances
+2. It may create a state that finally you decide to revert back manually
